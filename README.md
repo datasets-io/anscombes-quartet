@@ -22,7 +22,7 @@ var data = require( 'datasets-anscombes-quartet' );
 
 #### data
 
-[Anscombe's quartet](https://en.wikipedia.org/wiki/Anscombe%27s_quartet) comprises `4` individual datasets, where each individual dataset is an `array` of `[x,y]` tuples..
+[Anscombe's quartet](https://en.wikipedia.org/wiki/Anscombe%27s_quartet) comprises `4` individual datasets, where each individual dataset is an `array` of `[x,y]` tuples.
 
 ``` javascript
 console.log( data );
@@ -87,7 +87,7 @@ for ( i = 0; i < len; i++ ) {
 	/*
 		[ Var[x], Var[y] ]
 	*/
-	
+
 	console.log( 'Dataset %d: E[x] = %d, Var[x] = %d.', i+1, mu.get(0,0), s2.get(0,0) );
 	console.log( 'Dataset %d: E[y] = %d, Var[y] = %d.\n', i+1, mu.get(0,1), s2.get(0,1) );
 }
