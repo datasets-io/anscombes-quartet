@@ -47,12 +47,12 @@ describe( 'datasets-anscombes-quartet', function tests() {
 				'dim': 1
 			});
 		}
-		for ( i = 1; i < len; i++ ) {
+		for ( i = 0; i < len; i++ ) {
 			// x values...
-			assert.closeTo( mu[0].get(0,0), mu[i].get(0,0), 1e-12 );
+			assert.closeTo( mu[i].get(0,0), 9, 1e-12 );
 
 			// y values...
-			assert.closeTo( mu[0].get(0,1), mu[i].get(0,1), 1e-2 );
+			assert.closeTo( mu[i].get(0,1), 7.50, 1e-2 );
 		}
 	});
 
@@ -65,12 +65,12 @@ describe( 'datasets-anscombes-quartet', function tests() {
 				'dim': 1
 			});
 		}
-		for ( i = 1; i < len; i++ ) {
+		for ( i = 0; i < len; i++ ) {
 			// x values...
-			assert.closeTo( vars[0].get(0,0), vars[i].get(0,0), 1e-12 );
+			assert.closeTo( vars[i].get(0,0), 11, 1e-12 );
 
 			// y values...
-			assert.closeTo( vars[0].get(0,1), vars[i].get(0,1), 1e-2 );
+			assert.closeTo( vars[i].get(0,1), 4.12, 1e-2 );
 		}
 	});
 
